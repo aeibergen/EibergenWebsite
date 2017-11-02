@@ -7,10 +7,13 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta name="keywords"content="maps,cartography,Andrea Eibergen, Eibergen"/>
 		<title>Andrea Eibergen Cartography</title>
 
 		<!--put your external stylesheet links here-->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
 		<link rel="stylesheet" href="css/style.css">
 		<link href="https://fonts.googleapis.com/css?family=Rufina" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
@@ -20,31 +23,79 @@
 	</head>
 
 	<body>
-		<div id="mydiv">
-		<h1>Andrea Eibergen</h1>
-		<h2> adventures of a benevolent map wizard </h2>
-		<div id="">
-		<h3>
-			<a href="aboutme.html">about me</a>
-			|
-			<a href="resume.html">resume</a>
-		</h3>
-		<img src="img/image0.jpg" alt="MyFace" width="200"></img>
-		<img src="img/image3.jpg" alt="MyFace" width="200"></img>
-		<img src="img/image2.jpg" alt="MyFace" width="200"></img>
-		<img src="img/image1.jpg" alt="MyFace" width="200"></img>
-		<img src="img/image0.jpg" alt="MyFace" width="100"></img>
-		<img src="img/image3.jpg" alt="MyFace" width="100"></img>
-
-		<div id="footer">
-			<div class="container"></div>
+		<!-- This is the top header-->
+		<div class="jumbotron">
+			<div class="container">
+				<h1>Andrea Eibergen | Cartographer</h1>
+			</div>
 		</div>
+
+		<!-- This is the navbar -->
+		<nav class="navbar"> <!--Creates navbar-->
+			<div class="container">
+				<div class="navbar-header"> <!--Creates the navbar header-->
+					<button type="button" class="navbar-toggle collapsed"
+						data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+						aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span> <!--Used for screen readers for accessibility-->
+						<span class="glyphicon glyphicon-menu-hamburger"></span>
+						<span class="menu">Menu</span>
+					</button> <!--Hamburger button for smaller devices-->
+					<a class="navbar-brand" href="index.html">Work</a> <!--Your website brand name-->
+				</div>
+				<div id="navbar" class="collapse navbar-collapse"> <!--Links in navbar-->
+					<ul class="nav navbar-nav"> <!-- Unordered list for links on navbar -->
+						<li><a href="aboutme.html">About</a></li>
+						<li><a href="resume.html">Resume</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</div> <!-- end .navbar-collapse -->
+			</div> <!-- end .container -->
+		</nav> <!-- end navigation bar -->
+
+		<!-- Thumbnails of Maps -->
+		<!-- Fix the href links -->
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<a href="mywebsite.com/Europe.png" class="thumbnail">
+						<img src="img/Europe.png" alt="Europe Map">
+					</a>
+				</div>
+				<div class="col-md-4">
+					<a href="mywebsite.com/EibergenLab2.png" class="thumbnail">
+						<img src="img/EibergenLab2.png" alt="Scandinavia Map">
+					</a>
+				</div>
+				<div class="col-md-4">
+					<a href="mywebsite.com/turkeywip.png" class="thumbnail">
+						<img src="img/turkeywip.png" alt="Turkey Map">
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- <div id="mydiv">
+			<div class=”container-fluid”>
+				<div class="row">
+					<div class=”col-md-8 col-xs-12”>
+						<a href="aboutme.html">about me</a>
+					</div>
+					<div class=”col-md-4 col-xs-6”>
+						<a href="resume.html">resume</a>
+					</div><!--/row -->
+				<!-- </div>
+			</div>
+		</div> -->
 		<!--put your initial page content here-->
-			
+
 		<!--you can also use this space for internal scripts or stylesheets;
 		place these within <script> or <style> tags-->
 
 		<!--put your external script links here-->
+		<script type="text/javascript" src="lib/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="lib/bootstrap.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
 		</div>
 	</body>
 </html>
