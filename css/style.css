@@ -5,20 +5,81 @@
 /* Text Starts Here */
 
 h1 {
-}
-
-
-h2 {
+	font-family: 'Fjalla One', sans-serif;
 }
 
 h3 {
+	font-family: 'Cantarell', sans-serif;
+}
+
+h3.resume {
+	font-family: 'Cantarell', sans-serif;
+	text-transform: uppercase;
+}
+
+
+h4 {
+	font-family: 'Cantarell', sans-serif;
 }
 
 p {
+	font-family: 'Cantarell', sans-serif;
+}
+
+ul.nav {
+	font-family: 'Cantarell', sans-serif;
+	color: black;
+}
+
+.intro {
+	text-transform: uppercase;
 }
 
 .italics {
 	font-style: italic;
 }
 
+a {
+	color: black;
+}
+
 /* Other Starts here */
+
+/*body { 
+    background: url(/img/concrete_seamless.png) repeat 0 0;
+}*/
+
+/*.hovereffect:hover {
+	opacity: .5;
+}*/
+
+/*.image_description:hover {
+    padding: 10px;
+    transition: .2s;
+    transform: translateY(1em);
+}*/
+
+.img_description_layer:hover {
+	font-size 1.2em;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: gray;
+	color: black;
+	visibility: hidden;
+	opacity: 0;
+	display: flex;
+	align-items: left;
+	transition: opacity 4s, visible;
+}
+
+.row {
+/*	display: flex;*/
+	flex-flow: row-wrap;
+	justify-content: space-between;
+	align-content: flex-start;
+	align-items: flex-start;
+	margin: 0;
+}
