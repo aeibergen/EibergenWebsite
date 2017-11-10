@@ -59,6 +59,15 @@ a {
     transform: translateY(1em);
 }*/
 
+.img {
+	max-width: 100%;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	overflow: hidden;
+	margin-bottom: 0px;
+}
+
+
 .img_description_layer:hover {
 	font-size 1.2em;
 	position: absolute;
@@ -82,4 +91,23 @@ a {
 	align-content: flex-start;
 	align-items: flex-start;
 	margin: 0;
+}
+
+div.embeddedframe, iframe {
+	width: 99%;
+	height: 99vh;
+	background-color: white;
+	display: block;
+	margin: auto;
+}
+
+.aboutme {
+	width: 100%;
+	height: auto;
+}
+
+div.main {
+	background-color: white;
+	display: block;
+	margin: auto;
 }
