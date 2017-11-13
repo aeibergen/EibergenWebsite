@@ -8,6 +8,11 @@ h1 {
 	font-family: 'Fjalla One', sans-serif;
 }
 
+h2 {
+	font-family: 'Cantarell', sans-serif;
+	text-transform: uppercase;
+}
+
 h3 {
 	font-family: 'Cantarell', sans-serif;
 }
@@ -68,24 +73,7 @@ a {
 }
 
 
-.img_description_layer:hover {
-	font-size 1.2em;
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background: gray;
-	color: black;
-	visibility: hidden;
-	opacity: 0;
-	display: flex;
-	align-items: left;
-	transition: opacity 4s, visible;
-}
-
 .row {
-/*	display: flex;*/
 	flex-flow: row-wrap;
 	justify-content: space-between;
 	align-content: flex-start;
@@ -106,8 +94,45 @@ div.embeddedframe, iframe {
 	height: auto;
 }
 
-div.main {
-	background-color: white;
-	display: block;
-	margin: auto;
+/*.large {
+	margin: 0 20px 0 20px;
+}*/
+
+/*all that hover trash*/
+
+.img-fluid {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
+.thumbnail:hover .overlay {
+  opacity: .85;
+}
+
+.text {
+  	color: #2b3f21;
+  	font-size: 20px;
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	-ms-transform: translate(-50%, -50%);
+  	font-family: 'Cantarell', sans-serif;
+	text-transform: uppercase;
+  	text-align: center;
 }
