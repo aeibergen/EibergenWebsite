@@ -37,7 +37,7 @@ ul.nav {
 	color: black;
 }
 
-strong {
+.recolor {
 	color: #668FAB;
 }
 
@@ -65,12 +65,24 @@ main, nav, section {
 .container-fluid {
     bottom: 0;
     width: 100%;
-    height: 100px;
+    height: 150px;
     line-height: 150px;
-    background-color: #668FAB;
+    background-color: lightgray;
 }
+
+.page-footer {
+	padding-top: 50px;
+}
+
+.blues {
+	color: #668FAB;
+}
+
 /* Other Starts here */
 
+.foot {
+	padding-left: 20px;
+}
 .job {
 	padding-left: 20px;
 }
@@ -103,7 +115,7 @@ main, nav, section {
 
 div.embeddedframe, iframe {
 	width: 99%;
-	height: 99vh;
+	height: 80vh;
 	background-color: white;
 	display: block;
 	margin: auto;
